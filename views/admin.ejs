@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Personal Blogs</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="subContainer">
+            <h1>Personal Blog</h1>
+            <div><a href="/new" class="btnAddNew">Add New</a></div>
+        </div>
+        <div class="container">
+            <% articles.map((article) => { %>
+                <div class="subContainer">
+                    <div><%= article.title %></div>
+                    <div class="subContainer">
+                        <div class="mr-2"><a href="/editArticle/<%= article.id %>">Edit</a></div>
+                        <div><form method="post" action="deleteArticle/<%= article.id %>"><button type="submit">Delete</button></form></div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

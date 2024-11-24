@@ -1,0 +1,28 @@
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "description": "a web app to post update and view your personal blogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synchoz/Personal-Blog.git"
+  },
+  "keywords": [
+    "ejs",
+    "nodejs"
+  ],
+  "author": "dima varo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/synchoz/Personal-Blog/issues"
+  },
+  "homepage": "https://github.com/synchoz/Personal-Blog#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
+}

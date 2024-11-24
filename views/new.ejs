@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Article</title>
+</head>
+<body>
+    <form action="/new" method="post">
+        <div class="mainDiv">
+            <h1>New Article</h1>
+            <div class="editTitleDiv">
+                <label for="title">Article Title</label>
+                <input name="title" placeholder="Article Title" required/>
+            </div>
+            <div class="container">
+                <div class="dateDiv">
+                    <label for="date">Publishing Date</label>
+                    <input name="date" type="date" placeholder="Publishing Date" required/>
+                </div>
+                <div class="contentDiv">
+                    <label for="content">Content</label>
+                    <textarea name="content" placeholder="Content"></textarea>
+                </div> 
+            </div>
+            <button type="submit">Publish</button>
+        </div>
+    </form>
+</body>
+</html>

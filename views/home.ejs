@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Personal Blogs</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <h1>Personal Blog</h1>
+        <div class="container">
+            <% articles.map((article) => { %>
+                <div class="subContainer">
+                    <div><a href="/article/<%= article.id %>"><%= article.title %></a></div>
+                    <div class="dateDiv"><%= article.formatteddate %></div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>

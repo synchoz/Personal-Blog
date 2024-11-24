@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%= article.title %></title>
+</head>
+<body>
+    <form action="/editArticle/<%= article.id %>" method="post">
+        <div class="mainDiv">
+            <h1>Update Article</h1>
+            <div class="editTitleDiv">
+                <label for="title">Article Title</label>
+                <input name="title" value="<%= article.title %>" required/>
+            </div>
+            <div class="container">
+                <div class="dateDiv">
+                    <label for="date">Publishing Date</label>
+                    <input type="date" name="date" value="<%= article.date %>" %required/>
+                </div>
+                <div class="contentDiv">
+                    <label for="content">Content</label>
+                    <textarea name="content" placeholder="Content"><%= article.content %></textarea>
+                </div>
+            </div>
+            <button type="submit">Update</button>
+        </div>
+    </form>
+</body>
+</html>
